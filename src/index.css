@@ -290,7 +290,8 @@ button:hover {
   display: flex;
   flex-direction: column; /* Default to column layout for mobile */
   align-items: center;
-  width: 100%;
+  width: auto;
+
 }
 
 .skills__row {
