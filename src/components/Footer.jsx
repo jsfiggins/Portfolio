@@ -10,10 +10,11 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/jaseane-figgins" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
                     <FaLinkedin size={30} />
                 </a>
-                <a href="https://github.com/jaseane-figgins" target="_blank" rel="noopener noreferrer" className="github-icon">
+                <a href="https://github.com/jsfiggins" target="_blank" rel="noopener noreferrer" className="github-icon">
                     <FaGithub size={30} />
                 </a>
                 <div className="aurora"></div>
+                
             </div>
         </footer>
     );

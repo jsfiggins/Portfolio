@@ -22,8 +22,8 @@ const Projects = () => {
       ],
       description: "Full-stack MERN application that empowers users to track their workouts, exercise by exercise. This application allows users to log their exercises, monitor progress, and view previous entries to enhance their fitness journey. With user authentication implemented using JWT (JSON Web Tokens), GainzTracker ensures that each user's specific data remains secure and private.",
       tech: 'React, Node, MongoDB, JWT, Git, Github, Express',
-      githubUrl: 'https://github.com/yourusername/GainzTracker',
-      liveUrl: 'https://gainztracker.onrender.com',
+      githubUrl: "https://github.com/jsfiggins/gainzTracker",
+      liveUrl: "https://gainztracker-lbx3.onrender.com",
     },
     {
       title: 'SpotMe',
@@ -34,8 +34,8 @@ const Projects = () => {
       ],
       description: "Front-end application designed to help users explore various exercises targeting specific body parts. With an intuitive interface, users can easily search for exercises based on their fitness goals, allowing for personalized workout planning. The app fetches data from a comprehensive exercise API, ensuring a rich repository of workouts categorized by body parts.",
       tech: "Built using React, RESTful APIs, Axios",
-      githubUrl: 'https://github.com/yourusername/SpotMe',
-      liveUrl: 'https://spotme.onrender.com',
+      githubUrl: 'https://github.com/jsfiggins/spotMe',
+      liveUrl: 'https://spotme-diph.onrender.com',
     },
     {
       title: "Nirvana Lifeline",
@@ -45,9 +45,7 @@ const Projects = () => {
         nirvanaPublic
       ],
       description: "Full-stack application designed to track and manage issues within a team to communicate maintenance logs and updates. Complete with user authentication and implements CRUD methods. Currently in production.",
-      tech: "React, Node, MongoDB, JWT, Git, Github, Express",
-      githubUrl: 'https://github.com/yourusername/NirvanaLifeline',
-      liveUrl: 'https://nirvanalifeline.onrender.com',
+      tech: "React, Node, MongoDB, JWT, Git, Github, Express"
     }
   ];
 
@@ -93,19 +91,24 @@ const ProjectCard = ({ project, reverseLayout, index }) => {
         <h3 className='project-title'>{project.title}</h3>
         <p className='project-description'>{project.description}</p>
         <p className='project-tech'>Technologies: {project.tech}</p>
-        
-        {/* Learn More Buttons */}
-        <div className="project-links">
-          <button>
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="learn-more-link">Learn More (GitHub)</a>
-          </button>
-          <button>
-            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="learn-more-link">View Live</a>
-          </button>
-        </div>
+
+        {/* Conditionally render buttons or development message */}
+        {project.githubUrl && project.liveUrl ? (
+          <div className="project-links">
+            <button>
+              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="learn-more-link">Learn More (GitHub)</a>
+            </button>
+            <button>
+              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="learn-more-link">View Live</a>
+            </button>
+          </div>
+        ) : (
+          <p className="project-development-note">This project is currently in development. Stay tuned for updates!</p>
+        )}
       </div>
     </div>
   );
 };
+
 
 export default Projects;

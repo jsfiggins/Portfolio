@@ -515,6 +515,11 @@ button:hover {
   background: radial-gradient(circle, rgba(33, 150, 243, 0.8), rgba(33, 150, 243, 0.5));
 }
 
+.project-development-note{
+  color:#9d00ff;
+  font-size: rem;
+
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .project-card {
@@ -654,6 +659,10 @@ p.contactParagraph {
   background-color: #0056b3;
 }
 
+
+
+
+
 .footer {
   position: relative;
   background: linear-gradient(to bottom left, #19322f, rgb(98, 12, 81));
@@ -683,7 +692,7 @@ p.contactParagraph {
 }
 
 .footer a:hover {
-  text-decoration: underline;
+ text-decoration:none ;
 }
 
 /* Aurora Effect */
