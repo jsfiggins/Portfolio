@@ -20,7 +20,7 @@ const Projects = () => {
         trackerForm,
         trackerExample
       ],
-      description: "Full-stack MERN application that empowers users to track their workouts, exercise by exercise. This application allows users to log their exercises, monitor progress, and view previous entries to enhance their fitness journey. With user authentication implemented using JWT (JSON Web Tokens), GainzTracker ensures that each user's specific data remains secure and private.",
+      description: "Full-stack MERN application for tracking workouts, allowing users to log exercises, monitor progress, and view past entries. Implements JWT-based authentication to ensure secure, personalized data management.",
       tech: 'React, Node, MongoDB, JWT, Git, Github, Express',
       githubUrl: "https://github.com/jsfiggins/gainzTracker",
       liveUrl: "https://gainztracker-lbx3.onrender.com",
@@ -32,7 +32,7 @@ const Projects = () => {
         exercises,
         bodyPart
       ],
-      description: "Front-end application designed to help users explore various exercises targeting specific body parts. With an intuitive interface, users can easily search for exercises based on their fitness goals, allowing for personalized workout planning. The app fetches data from a comprehensive exercise API, ensuring a rich repository of workouts categorized by body parts.",
+      description: "Front-end application enabling users to explore exercises targeting specific body parts.",
       tech: "Built using React, RESTful APIs, Axios",
       githubUrl: 'https://github.com/jsfiggins/spotMe',
       liveUrl: 'https://spotme-diph.onrender.com',
@@ -44,13 +44,14 @@ const Projects = () => {
         nirvanaHome,
         nirvanaPublic
       ],
-      description: "Full-stack application designed to track and manage issues within a team to communicate maintenance logs and updates. Complete with user authentication and implements CRUD methods. Currently in production.",
+      description: "Full-stack application designed to track and manage issues. Currently in production.",
       tech: "React, Node, MongoDB, JWT, Git, Github, Express"
     }
   ];
 
   return (
     <section id='projects'>
+      <h1 className='projectsHeader'>Projects</h1>
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} reverseLayout={index % 2 !== 0} index={index} />
       ))}
@@ -101,6 +102,7 @@ const ProjectCard = ({ project, reverseLayout, index }) => {
             <button>
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="learn-more-link">View Live</a>
             </button>
+            <p className="loading-note">Note: The live version may take a moment to load initially.</p>
           </div>
         ) : (
           <p className="project-development-note">This project is currently in development. Stay tuned for updates!</p>

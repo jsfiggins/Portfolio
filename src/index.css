@@ -4,9 +4,10 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding:0;
+  font-family:"Share Tech", sans-serif;
   color: #333;
-  background: linear-gradient(to bottom left, #19322f, rgb(98, 12, 81));
+  background: linear-gradient(to bottom left, rgb(77, 23, 125), rgb(8, 53, 62));
   background-attachment: fixed;
   background-size: cover;
 }
@@ -110,14 +111,14 @@ body {
   position: relative;
   font-size: 2rem;
   font-weight: bold;
-  background: linear-gradient(90deg, rgb(13, 136, 148), #769bc2);
+  background: linear-gradient(90deg, #efebef, #769bc2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   text-align: center;
   -webkit-text-stroke: 0.5px white; /* Adds black outline */
-  z-index: 2; /* Ensures text appears on top of glass container */
+
 }
 
 .section {
@@ -141,7 +142,7 @@ body {
 }
 
 .JaseaneB {
-  background: linear-gradient(90deg,#8a348e, rgb(91, 224, 241));
+  background: linear-gradient(90deg,#efebef, rgb(154, 91, 241));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -150,7 +151,7 @@ body {
 }
 
 .Jaseane {
-  background: linear-gradient(90deg,#8a348e, rgb(91, 224, 241));
+  background: linear-gradient(90deg,#efebef, rgb(28, 85, 93));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -189,7 +190,7 @@ button {
   background-clip: initial;
   -webkit-background-clip: initial;
   -webkit-text-fill-color: initial;
-  -webkit-text-stroke:1px black ; /* Adds black outline */
+  
 }
   
 button:hover {
@@ -236,7 +237,7 @@ button:hover {
 
 .aboutHeader {
   font-size: 3rem;
-  background: linear-gradient(90deg,#8a348e, rgb(91, 224, 241));
+  background: linear-gradient(90deg,#efebef, rgb(28, 85, 93));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -379,11 +380,31 @@ button:hover {
 
 
 
-
+.loading-note {
+  color: #f39c12; /* Adjust the color to match your design */
+  font-size: 14px;
+  margin-top: 10px;
+}
 
 #projects {
   padding: 60px 0;
 }
+
+.projectsHeader {
+  font-size: 3rem;
+  background: linear-gradient(90deg,#efebef, rgb(28, 85, 93));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  text-align: center; /* Center text */
+  width: 100%; /* Full width to ensure it's centered */
+  display: flex; /* Allows centering */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
 
 .project-card {
   position: relative;
@@ -416,7 +437,7 @@ button:hover {
   height: 100%;
   object-fit: contain;
   margin-bottom:10px;
-  
+
 }
 
 .project-card:hover .project-background{
@@ -470,7 +491,7 @@ button:hover {
 
 .project-title {
   font-size: 3rem;
-  background: linear-gradient(90deg,rgb(91, 224, 241),#8a348e);
+  background: linear-gradient(90deg,#efebef, rgb(28, 85, 93));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -580,7 +601,7 @@ button:hover {
 
 .contact-header h1 {
   font-size: 3rem;
-  background: linear-gradient(90deg,#8a348e, rgb(91, 224, 241));
+  background:linear-gradient(90deg,#efebef, rgb(28, 85, 93));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -655,7 +676,7 @@ p.contactParagraph {
 
 .footer {
   position: relative;
-  background: linear-gradient(to bottom left, #19322f, rgb(98, 12, 81));
+  background: transparent;
   color: #fff;
   font-size: 1rem;
   text-align: center;

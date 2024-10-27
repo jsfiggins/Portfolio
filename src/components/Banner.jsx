@@ -117,7 +117,6 @@ const Banner = () => {
               repeat={Infinity}
             />
           </div>
-          <button onClick={() => window.location.href = '#contact'}>Contact Me</button>
         </div>
       
     </div>
