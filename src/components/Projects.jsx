@@ -24,7 +24,12 @@ const Projects = () => {
       tech: 'React, Node, MongoDB, JWT, Git, Github, Express',
       githubUrl: "https://github.com/jsfiggins/gainzTracker",
       liveUrl: "https://gainztracker-lbx3.onrender.com",
+      demoCredentials: {
+        username: 'demo',
+        password: 'fitness'
+      }
     },
+    
     {
       title: 'SpotMe',
       images: [
@@ -103,6 +108,12 @@ const ProjectCard = ({ project, reverseLayout, index }) => {
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="learn-more-link">View Live</a>
             </button>
             <p className="loading-note">Note: The live version may take a moment to load initially.</p>
+            {project.demoCredentials && (
+              <p className="project-development-note">
+                Demo Username: {project.demoCredentials.username}<br />
+                Demo Password: {project.demoCredentials.password}
+              </p>
+            )}
           </div>
         ) : (
           <p className="project-development-note">This project is currently in development. Stay tuned for updates!</p>
@@ -111,6 +122,7 @@ const ProjectCard = ({ project, reverseLayout, index }) => {
     </div>
   );
 };
+
 
 
 export default Projects;

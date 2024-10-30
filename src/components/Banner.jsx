@@ -105,9 +105,9 @@ const Banner = () => {
             <span className="Jaseane">I am a </span>
             <TypeAnimation
               sequence={[
-                'Full Stack Developer,',
+                'Full Stack Developer',
                 1500,
-                'Creative Innovator,',
+                'Creative Innovator',
                 1500,
                 'Lifelong Learner',
                 1500,
